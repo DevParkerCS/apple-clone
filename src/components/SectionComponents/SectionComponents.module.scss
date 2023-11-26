@@ -1,0 +1,153 @@
+@use "../MacSection/MacSection.module.scss";
+
+.sectionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+
+  .itemImg {
+    width: 55%;
+    margin-top: 3.5rem;
+  }
+
+  .itemGiftCard {
+    color: rgba(207, 118, 71, 1);
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .txtWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 7rem;
+  }
+
+  .itemName {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    min-height: 50px;
+  }
+
+  .itemName:hover {
+    p {
+      color: rgba(56, 125, 212, 1);
+    }
+  }
+
+  .itemPrice {
+    font-size: 0.875rem;
+    margin: 1rem;
+  }
+
+  .itemColors {
+    width: 100px;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .colorsReplace {
+    width: 100px;
+    height: 5.3rem;
+  }
+}
+
+.sectionHead {
+  background-color: white;
+  padding: 2rem 4rem;
+  padding-bottom: 0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 63.5vw;
+  overflow: hidden;
+
+  .headTxtWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .title {
+    width: 60%;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    color: rgba(29, 29, 31, 1);
+    font-weight: normal;
+  }
+
+  .subtitle {
+    width: 50%;
+    font-size: 1rem;
+    color: rgba(29, 29, 31, 0.6);
+    font-weight: normal;
+  }
+
+  img {
+    width: 35%;
+  }
+}
+
+.sectionHead.mac {
+  padding-left: 0;
+
+  .headImg {
+    width: 50%;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+  }
+}
+
+.sectionItem.mac {
+  overflow: hidden;
+
+  .itemName {
+    width: 50%;
+  }
+
+  .itemPrice {
+    width: 65%;
+  }
+}
+
+.sectionHead.airpod {
+  padding-bottom: 2rem;
+}
+
+.sectionItem.ipad,
+.sectionItem.airpod {
+  width: calc(63.5vw / 2 - 0.25rem);
+
+  .itemImg {
+    width: 35%;
+  }
+
+  .itemPrice {
+    width: 65%;
+  }
+}
+
+.sectionItem.iphone {
+  .itemImg {
+    width: 45%;
+  }
+}
+
+.sectionItem.airpod {
+  .itemImg {
+    width: 40%;
+  }
+}

@@ -1,0 +1,13 @@
+.legalSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  font-size: 0.7rem;
+  .legalWrapper {
+    width: 63.5vw;
+  }
+  li {
+    margin: 1rem;
+  }
+}

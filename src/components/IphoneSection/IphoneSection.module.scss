@@ -1,0 +1,15 @@
+.iphoneItems {
+  width: 63.5vw;
+  display: flex;
+  margin-top: 0.5rem;
+
+  .iphoneItem {
+    width: calc(100% / 3);
+    background-color: white;
+    border-radius: 20px;
+  }
+}
+
+.itemSpacer {
+  width: 0.5rem;
+}
