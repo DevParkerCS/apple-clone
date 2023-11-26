@@ -4,10 +4,17 @@
   align-items: center;
   background-color: transparent;
   font-size: 0.7rem;
+
   .legalWrapper {
     width: 63.5vw;
   }
   li {
     margin: 1rem;
   }
+}
+
+hr {
+  width: 63.5vw;
+  background-color: rgba(29, 29, 31, 0.5);
+  margin: 1rem 0;
 }

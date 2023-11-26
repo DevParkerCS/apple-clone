@@ -128,7 +128,8 @@
 }
 
 .sectionItem.ipad,
-.sectionItem.airpod {
+.sectionItem.airpod,
+.sectionItem.watch {
   width: calc(63.5vw / 2 - 0.25rem);
 
   .itemImg {
@@ -149,5 +150,16 @@
 .sectionItem.airpod {
   .itemImg {
     width: 40%;
+  }
+}
+
+.sectionHead.watch {
+  .headImg {
+    width: 25%;
+    margin: 0rem 5rem;
+  }
+
+  .headTxtWrapper {
+    margin-left: 4rem;
   }
 }

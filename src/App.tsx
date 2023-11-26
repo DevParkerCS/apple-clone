@@ -6,6 +6,9 @@ import { IphoneSection } from "./components/IphoneSection/IphoneSection";
 import { MacSection } from "./components/MacSection/MacSection";
 import { IpadSection } from "./components/IpadSection/IpadSection";
 import { AirpodSection } from "./components/AirpodSection/AirpodSection";
+import { WatchSection } from "./components/WatchSection/WatchSection";
+import card from "./assets/card.jpg";
+import twoPhones from "./assets/twoPhones.jpg";
 
 function App() {
   const iphoneRef = useRef<HTMLElement>(null);
@@ -70,9 +73,45 @@ function App() {
         </section>
         <button className={styles.sectionBtn}>Shop iPad</button>
         <section className={styles.airpodSection}>
+          <WatchSection />
+        </section>
+        <button className={styles.sectionBtn}>Shop Apple Watch</button>
+
+        <section className={styles.airpodSection}>
           <AirpodSection />
         </section>
+        <button className={styles.sectionBtn}>Shop AirPods</button>
       </section>
+
+      <section className={styles.saveSection}>
+        <h1 className={styles.saveTitle}>
+          Even more <br /> ways to save.
+        </h1>
+        <div className={styles.cardWrapper}>
+          <div className={styles.saveCard}>
+            <h2>Buy with Apple Card.</h2>
+            <h3>
+              Get 3% Daily Cash back with Apple Card. And pay over time,
+              interest-free when you choose to check out with Apple Card Monthly
+              Installments.⁵
+            </h3>
+            <a>Learn More {">"}</a>
+            <img className={styles.cardImg} src={card} />
+          </div>
+          <div className={styles.itemSpacer}></div>
+          <div className={styles.saveCard}>
+            <h2>
+              Get credit with <br /> Apple Trade In.
+            </h2>
+            <h3>
+              Trade in your eligible device and get credit toward a new one.⁶
+            </h3>
+            <a>Learn More {">"}</a>
+            <img className={styles.phonesImg} src={twoPhones} />
+          </div>
+        </div>
+      </section>
+
       <LegalSection />
     </div>
   );

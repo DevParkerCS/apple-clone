@@ -165,6 +165,7 @@ export const LegalSection = () => {
           previous visit to Apple.
         </p>
       </div>
+      <hr />
     </section>
   );
 };
